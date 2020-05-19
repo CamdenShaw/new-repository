@@ -2,6 +2,6 @@ $(document).ready(() => {
 
 })
 
-$(window).load(() => {
-
+$(window).on('load', () => {
+  $('h1').css({display: 'inline', color: 'pink'})
 })
