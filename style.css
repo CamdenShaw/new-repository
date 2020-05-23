@@ -1,12 +1,35 @@
+:root {
+  --default-color: blue;
+  --default-hover-color: pink;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
+  color: #ACF;
+  color: var(--default-color, #ACF);
+}
+
+a:hover,
+a:link:hover,
+a:visited:hover {
+  color: #DEF;
+  color: var(--default-hover-color, #DEF);
 }
 
 body {
   font-size: 16px;
 }
 
+header {
+  font-size: 2em;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: 3em;
   text-transform: uppercase;
+}
+
+footer {
+  --default-color: orange;
+  --default-hover-color: purple;
 }
